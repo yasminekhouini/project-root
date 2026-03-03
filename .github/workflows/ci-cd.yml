@@ -53,3 +53,8 @@ jobs:
           docker compose up -d
           docker ps
 
+      - name: Vérifier les conteneurs
+        run: |
+          docker ps
+          docker-compose ps
+
